@@ -12,7 +12,7 @@ public class Print<T> {
      */
     T value;
 
-    public Print(T value) {
+    public void setValue(T value) {
         this.value = value;
     }
 

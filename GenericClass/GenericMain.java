@@ -3,7 +3,25 @@ package GenericClass;
 public class GenericMain {
     public static void main(String[] args) {
 
-        Print<String> printObj = new Print<>("Printing");
+        /*
+            String is decided at runtime.
+         */
+        Print<String> printObj = new Print<>();
+        printObj.setValue("Print");
         printObj.print();
+
+        /*
+            String is decided at compile type
+         */
+        ColorPrint colorPrint = new ColorPrint();
+        colorPrint.setValue("Color Print");
+        colorPrint.print();
+
+        /*
+            String is decided at runtime.
+         */
+        BWPrint<String> bwPrintObj = new BWPrint<>();
+        bwPrintObj.setValue("BWPrint");
+        bwPrintObj.print();
     }
 }
