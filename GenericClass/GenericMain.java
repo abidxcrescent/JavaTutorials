@@ -23,5 +23,15 @@ public class GenericMain {
         BWPrint<String> bwPrintObj = new BWPrint<>();
         bwPrintObj.setValue("BWPrint");
         bwPrintObj.print();
+
+        /*
+            Pair generic class.
+         */
+        Pair<Integer,String> pairObj = new Pair<>();
+        pairObj.put(1,"Abid");
+        pairObj.print();
+
+
+
     }
 }
