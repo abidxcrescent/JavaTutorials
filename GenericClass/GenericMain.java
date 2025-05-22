@@ -31,6 +31,17 @@ public class GenericMain {
         pairObj.put(1,"Abid");
         pairObj.print();
 
+        /*
+            Upper bound is created on the class Bounded Generic for Vehicle
+            Meaning Vehicle and its objects can be passed and nothing else.
+         */
+        BoundedGeneric<Vehicle> boundedGenericObj = new BoundedGeneric<>();
+        BoundedGeneric<Car> boundedGenericCar = new BoundedGeneric<>();
+        BoundedGeneric<Bike> boundedGenericBike = new BoundedGeneric<>();
+        BoundedGeneric<Ship> boundedGenericShip = new BoundedGeneric<>();
+
+        //This line will give compile time error.
+        //BoundedGeneric<String> obj = new BoundedGeneric<String>();
 
 
     }
