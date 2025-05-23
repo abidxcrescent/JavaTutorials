@@ -21,5 +21,10 @@ public class pojoenumsmain {
         WeekEnd weekEnd = WeekEnd.valueEnumFromValue(105);
         System.out.println(weekEnd);
 
+        WeekDays weekDays = WeekDays.valueOf("MONDAY");
+        weekDays.hello();
+
+        TwoDays twoDays = TwoDays.valueOf("MONDAY");
+        twoDays.hello();
     }
 }
