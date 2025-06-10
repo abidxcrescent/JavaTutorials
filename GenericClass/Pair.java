@@ -11,6 +11,7 @@ public class Pair <K,V>{
     }
 
     public void print(){
+
         System.out.println(this.key + ": " + this.value);
     }
 
